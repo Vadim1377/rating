@@ -1,29 +1,16 @@
-<table style="border: solid;">
-  <tr>
-    <th>№</th>
-    <th>ФИО</th>
-    <th>Юбилей</th>
-    <th>Дата рождения</th>
-    <th>Кол-во дней до др</th>
-  </tr>
-  
-<tr *ngFor="let item of list; let i = index" >
-  <td>
-  {{i+1}}
-  </td>
-  <td>
-    {{item.name}}
-    </td>
-    <td>
-      <div *ngIf="item.ubiley">Юбилей </div>
-      
-    </td>
-    <td>
-      {{item.day}}
-      </td>
-      <td>
-        {{item.days}}
-        </td>
-</tr>
-  </table>
-<menu-comp></menu-comp>
+<div class="navig">
+  <button class="button" (click)="changeTab(1)">Топ</button>
+  <button class="button" (click)="changeTab(2)">Год</button>
+  <button class="button" (click)="changeTab(3)">Адм</button>
+</div>
+<div *ngIf="tab==1">
+  <div *ngIf="showdetailuser"><detailuser [userid]="userid"></detailuser></div>
+  <rating  (selectName)="selectName($event)"></rating>
+</div>
+<div *ngIf="tab==2">
+  календарь
+</div>
+<div *ngIf="tab==3">
+  <menu-comp></menu-comp>
+</div>
+

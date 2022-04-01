@@ -7,34 +7,29 @@ import { HttpService} from './http.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'rating';
-  list: any[];
+ tab: number;
+  userid: any[];
+  showdetailuser: boolean=false;
+
   constructor(private httpService: HttpService){}
-      
-    ngOnInit(){
-        this.httpService.getData().subscribe((data:any) => {
-            this.list=data["userList"]
-            
-            this.list.sort(function (a, b) {
-                if (a.day > b.day) {
-                  return 1;
-                }
-                if (a.day < b.day) {
-                  return -1;
-                }
-                // a должно быть равным b
-                return 0;
-              });
-              let now = new Date().getTime();
-              var pattern = /(\d{2})\.(\d{2})\.(\d{4})/;
-              for (var i=0;i<this.list.length;i++){
-                var dt = new Date(this.list[i].day.replace(pattern,'$3-$2-$1')).getTime();
-                var res= (dt-now) / 86400000     
-                res=Math.ceil(res)
-                this.list[i].days=res
-              }
-              
-          }
-        );
+
+ changeTab(val){
+   this.tab=val
+ }
+ public selectName(val: number): void {
+  this.finduser(val)
+  this.showdetailuser=true;
+ }
+ finduser(userid){
+  this.httpService.getData().subscribe((data:any) => {
+    var userdata=data["userList"]
+    for (var i=0; i<userdata.length; i++)
+    {
+        if (userdata[i].number==userid){
+            this.userid=userdata[i]
+        }
     }
+});
+ }
+ 
 }
