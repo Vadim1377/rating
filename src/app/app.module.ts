@@ -4,15 +4,17 @@ import { HttpService} from './http.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { MenuComponent } from '../menubar/menu.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
