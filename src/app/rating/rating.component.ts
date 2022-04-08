@@ -4,7 +4,7 @@ import { HttpService} from '../http.service';
 @Component({
   selector: 'rating',
   templateUrl: './rating.component.html',
-  styleUrls: ['../app.component.scss']
+  styleUrls: ['./rating.component.css']
 })
 
 export class RatingComponent {

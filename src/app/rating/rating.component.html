@@ -1,4 +1,4 @@
-<table style="border: solid;">
+<table style="border: solid; cursor:pointer; background-color: aqua;">
     <tr>
       <th>№</th>
       <th>ФИО</th>
@@ -7,7 +7,8 @@
       <th>Кол-во дней до др</th>
     </tr>
     
-  <tr *ngFor="let item of list; let i = index" >
+ 
+    <tr *ngFor="let item of list; let i = index" >
     <td>
     {{i+1}}
     </td>
@@ -25,4 +26,5 @@
           {{item.days}}
           </td>
   </tr>
+
     </table>

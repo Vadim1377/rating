@@ -4,7 +4,7 @@ import { HttpService} from './http.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
  tab: number;
@@ -18,9 +18,11 @@ export class AppComponent {
  }
  public selectName(val: number): void {
   this.finduser(val)
-  this.showdetailuser=true;
+  
+  
  }
  finduser(userid){
+  this.showdetailuser=false;
   this.httpService.getData().subscribe((data:any) => {
     var userdata=data["userList"]
     for (var i=0; i<userdata.length; i++)
@@ -29,7 +31,9 @@ export class AppComponent {
             this.userid=userdata[i]
         }
     }
+    this.showdetailuser=true;
 });
+    
  }
  
 }

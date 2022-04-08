@@ -3,10 +3,17 @@ import { HttpService} from '../http.service';
 @Component({
     selector: 'detailuser',
     templateUrl: './detailuser.component.html',
-    styleUrls: ['./detailuser.component.scss']
+    styleUrls: ['../app.component.css']
 })
 export class DetailuserComponent { 
 @Input() userid: any=[]; 
-constructor(private httpService: HttpService){}
-
+status: boolean = true;
+constructor(private httpService: HttpService){
+    this.status = true;
+}
+closemodal(){
+    this.status = false;
+    var modal=document.getElementById('modal')
+    modal.className='modal closemodal'
+}
 }

@@ -1,0 +1,12 @@
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+  }
+ .knop{
+   display:none;
+ } 
+
+  
