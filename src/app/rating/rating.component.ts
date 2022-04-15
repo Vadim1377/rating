@@ -38,7 +38,10 @@ export class RatingComponent {
               }
               
           }
-        );
+      );
+
+      console.log(this.httpService.getUserId(2));
+
     }
     openDetailUser(val: number){
       this.selectName.emit(val);

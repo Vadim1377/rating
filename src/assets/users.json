@@ -1,18 +1,22 @@
-{ "userList":
-    [{
-        "number":1,
-        "name":"dsaf",
-        "ubiley":true,
-        "day":"30.03.2022"
-    },{
-        "number":2,
-        "name":"wefgweg",
-        "ubiley":false,
-        "day":"28.03.2022"
-    },{
-        "number":3,
-        "name":"asfgasf",
-        "ubiley":true,
-        "day":"26.03.2022"
-    }]
+{
+  "userList": [
+    {
+      "id": 1,
+      "name": "dsaf",
+      "ubiley": true,
+      "day": "30.03.2022"
+    },
+    {
+      "id": 2,
+      "name": "wefgweg",
+      "ubiley": false,
+      "day": "28.03.2022"
+    },
+    {
+      "id": 3,
+      "name": "asfgasf",
+      "ubiley": true,
+      "day": "26.03.2022"
+    }
+  ]
 }
