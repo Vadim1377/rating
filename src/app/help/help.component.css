@@ -1,0 +1,15 @@
+.help {
+  background: #AFEEEE;
+  float: left;
+  font-family: Arial;
+  margin-top: 15%;
+}
+
+.mark {
+  width: 10px;
+  margin-left: 90%;
+}
+
+.text {
+  width: 60px;
+}

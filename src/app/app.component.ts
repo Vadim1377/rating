@@ -7,6 +7,7 @@ import { HttpService} from './http.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'test_progect';
  tab: number;
   userid: any[];
   showdetailuser: boolean=false;

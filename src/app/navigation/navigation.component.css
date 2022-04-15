@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080;
+  width: 70px;
+  height: 25px;
+}
+
+ .button:hover {
+   background-color: #808080;
+   color: #9400D3;
+ }
+
+  .button:active {
+    background-color: #808080;
+    box-shadow: 0 100px #4682B4 inset;
+  }
+
+
+.text {
+  font-size: 70%;
+  font-family: Arial;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #40E0D0;
+}
+
+.ActiveTab {
+  background-color: yellow;
+  color: #800080;
+}
