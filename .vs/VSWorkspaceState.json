@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\navigation",
+    "\\src\\app\\rating"
+  ],
+  "SelectedNode": "\\src\\app\\rating\\rating.component.css",
+  "PreviewInSolutionExplorer": false
+}
