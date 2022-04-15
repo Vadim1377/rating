@@ -12,3 +12,10 @@ display: none;
     transform: translate(-50%, -50%);
     background-color: white;
   }
+
+.tab-container{
+  height: calc(100% - 25px);
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}

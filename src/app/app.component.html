@@ -1,18 +1,15 @@
-<app-navigation></app-navigation>
+<app-navigation (eventMode)="switchModeParent($event)"></app-navigation>
 <app-help></app-help>
-<div class="navig">
-  <button class="button" (click)="changeTab(1)">Топ</button>
-  <button class="button" (click)="changeTab(2)">Год</button>
-  <button class="button" (click)="changeTab(3)">Адм</button>
-</div>
-<div *ngIf="tab==1">
-  <div *ngIf="showdetailuser"><detailuser [userid]="userid"></detailuser></div>
-  <rating  (selectName)="selectName($event)"></rating>
-</div>
-<div *ngIf="tab==2">
-  календарь
-</div>
-<div *ngIf="tab==3">
-  <menu-comp></menu-comp>
+<div class="tab-container">
+      <div *ngIf="tab==1">
+        <div *ngIf="showdetailuser"><detailuser [userid]="userid"></detailuser></div>
+        <rating (selectName)="selectName($event)"></rating>
+      </div>
+      <div *ngIf="tab==2">
+        календарь
+      </div>
+      <div *ngIf="tab==3">
+        <menu-comp></menu-comp>
+      </div>
 </div>
 

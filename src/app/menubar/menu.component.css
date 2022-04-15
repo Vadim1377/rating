@@ -1,4 +1,4 @@
-﻿* {
+* {
     padding: 0%;
     margin: 0%;
 }
@@ -8,11 +8,11 @@ body
     height:1080px;
 }
 .grid-container {
-    display: grid;
-    height:100%;
-    grid-template-areas:"menu content";
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 7fr;
+  display: inline-block;
+  height: 100%;
+  grid-template-areas: "menu content";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 7fr;
 }
 .menu{
     grid-area:menu;

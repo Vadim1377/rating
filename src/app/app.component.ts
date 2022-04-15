@@ -8,21 +8,28 @@ import { HttpService} from './http.service';
 })
 export class AppComponent {
   title = 'test_progect';
- tab: number;
-  userid: any[];
+ tab!: number;
+  userid!: any[];
   showdetailuser: boolean=false;
 
-  constructor(private httpService: HttpService){}
+  constructor(private httpService: HttpService) {}
 
- changeTab(val){
+ changeTab(val: any){
    this.tab=val
- }
+  }
+
+
+  switchModeParent(event: number) {
+    console.log(event);
+    this.tab = event;
+  }
+
  public selectName(val: number): void {
   this.finduser(val)
   
   
  }
- finduser(userid){
+ finduser(userid: any){
   this.showdetailuser=false;
   this.httpService.getData().subscribe((data:any) => {
     var userdata=data["userList"]

@@ -10,7 +10,7 @@ import { HttpService} from '../http.service';
 export class RatingComponent {
  @Output() selectName = new EventEmitter<number>();
   title = 'rating';
-  list: any[];
+  list!: any[];
   detailuserid: any;
   constructor(private httpService: HttpService){}
       

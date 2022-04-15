@@ -1,7 +1,7 @@
 .modal {
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 39%;
     transform: translate(-50%, -50%);
     background-color: white;
   }
@@ -9,4 +9,3 @@
    display:none;
  } 
 
-  

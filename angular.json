@@ -141,9 +141,10 @@
             "production": {
               "devServerTarget": "rating:serve:production"
             }
+          }
         }
       }
-    }
-  },
-  "defaultProject": "test_progect"
+    },
+    "defaultProject": "test_progect"
+  }
 }

@@ -14,6 +14,6 @@ constructor(private httpService: HttpService){
 closemodal(){
     this.status = false;
     var modal=document.getElementById('modal')
-    modal.className='modal closemodal'
+    modal!.className='modal closemodal'
 }
 }
