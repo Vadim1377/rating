@@ -1,8 +1,7 @@
 .help {
-  background: #AFEEEE;
-  float: left;
+
   font-family: Arial;
-  margin-top: 15%;
+  
 }
 
 .mark {
@@ -11,5 +10,20 @@
 }
 
 .text {
-  width: 60px;
+  width: 240px;
+  color: #3667B1;
+    line-height: 30px;
+    display: inline-block;
+}
+.staricon{
+  background-image: url("star.svg");
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+    position: relative;
+
 }

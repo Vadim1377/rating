@@ -1,8 +1,14 @@
-td{
+/*td{
     width: 100px;
     text-align: center;
     background-color: aqua;
-}
+}*/
 .curs{
     cursor: pointer;
+}
+.left{
+    position: absolute; left:0; top:0; width:30%;
+}
+.right{
+    position: absolute; right:0; top:0; width:70%;
 }

@@ -28,3 +28,27 @@
   </tr>
 
     </table>
+    <p-table [value]="list">
+      <ng-template pTemplate="header">
+          <tr>
+            <th>№</th>
+            <th>ФИО</th>
+            <th>Юбилей</th>
+            <th>Дата рождения</th>
+            <th>Кол-во дней до др</th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-car>
+          <tr>
+              <td>{{car}}</td>
+              <td>{{car.name}}</td>
+              <td>
+                <div *ngIf="car.ubiley">Юбилей </div>
+                
+              </td>
+              <td>{{car.day}}</td>
+              <td>{{car.days}}</td>
+          </tr>
+      </ng-template>
+  </p-table>
+  

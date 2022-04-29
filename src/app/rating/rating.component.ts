@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { HttpService} from '../http.service';
+import {TableModule} from 'primeng/table';
+import {User} from '../rating/user';
 
 @Component({
   selector: 'rating',
@@ -10,7 +12,7 @@ import { HttpService} from '../http.service';
 export class RatingComponent {
  @Output() selectName = new EventEmitter<number>();
   title = 'rating';
-  list!: any[];
+  list!: User[];
   detailuserid: any;
   constructor(private httpService: HttpService){}
       
@@ -48,3 +50,4 @@ export class RatingComponent {
       console.log(val)
     }
 }
+

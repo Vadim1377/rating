@@ -12,6 +12,9 @@ import {DetailuserComponent} from './detailuser/detailuser.component'
 import { HelpComponent } from './help/help.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
+import {TableModule} from 'primeng/table';
+import {CalendarModule} from 'primeng/calendar';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +23,16 @@ import { NavigationComponent } from './navigation/navigation.component';
     DetailuserComponent,
     HelpComponent,
     NavigationComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    
+    TableModule,
+    CalendarModule,
+    BrowserAnimationsModule,
     BrowserModule
   ],
   providers: [HttpService],

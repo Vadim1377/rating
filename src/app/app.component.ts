@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpService} from './http.service';
+import {CalendarModule} from 'primeng/calendar';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ export class AppComponent {
   title = 'test_progect';
  tab!: number;
   userid!: any[];
+  value: Date = new Date();
   showdetailuser: boolean=false;
 
   constructor(private httpService: HttpService) {}
