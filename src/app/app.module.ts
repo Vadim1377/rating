@@ -15,6 +15,20 @@ import { NavigationComponent } from './navigation/navigation.component';
 import {TableModule} from 'primeng/table';
 import {CalendarModule} from 'primeng/calendar';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { NgxIndexedDBModule,DBConfig  } from 'ngx-indexed-db';
+const dbConfig: DBConfig  = {
+  name: 'MyDb',
+  version: 1,
+  objectStoresMeta: [{
+    store: 'people',
+    storeConfig: { keyPath: 'id', autoIncrement: true },
+    storeSchema: [
+      { name: 'name', keypath: 'name', options: { unique: false } },
+      { name: 'photo', keypath: 'photo', options: { unique: false } },
+      { name: 'email', keypath: 'email', options: { unique: false } }
+    ]
+  }]
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,8 +36,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     RatingComponent,
     DetailuserComponent,
     HelpComponent,
-    NavigationComponent,
-
+    NavigationComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -33,7 +47,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     TableModule,
     CalendarModule,
     BrowserAnimationsModule,
-    BrowserModule
+    BrowserModule,
+    NgxIndexedDBModule.forRoot(dbConfig)
   ],
   providers: [HttpService],
   

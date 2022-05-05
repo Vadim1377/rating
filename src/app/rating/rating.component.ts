@@ -18,7 +18,8 @@ export class RatingComponent {
       
     ngOnInit(){
         this.httpService.getData().subscribe((data:any) => {
-            this.list=data["userList"]
+        
+            this.list=data;
             
             this.list.sort(function (a, b) {
                 if (a.day > b.day) {
