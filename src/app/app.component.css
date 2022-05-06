@@ -19,3 +19,49 @@ display: none;
   display: inline-block;
   position: relative;
 }
+.napominanie{
+  background-image: url("napom.svg");
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+    position: relative;
+    margin-top: 26px;
+    margin-left: 48px;
+}
+.tablenapom{
+  top:54%;
+  left:1%;
+  height:100px;
+  width: 400px;
+  position: absolute;
+  border-radius: 40px;
+  background-color: white;
+  border: 2px solid black;
+}
+.text1{
+  position: absolute;
+  width:90px;
+  height: 23px;
+  margin-left: 108px;
+  margin-top: 19px;
+  size:20px;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 23px;
+}
+.text2{
+  position: absolute;
+  height: 23px;
+  margin-left: 108px;
+  margin-top: 52px;
+  size: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
+  line-height: 19px;
+}

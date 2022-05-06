@@ -6,7 +6,7 @@ import { Key, NgxIndexedDBService } from 'ngx-indexed-db';
 
 @Injectable()
 export class HttpService{
-//  sqlite3 = require('sqlite3').verbose();
+
     constructor(private http: HttpClient , private dbService: NgxIndexedDBService){ 
       this.dbService.count('users').subscribe((peopleCount) => {
         if (peopleCount == 0){
