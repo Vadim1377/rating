@@ -1,3 +1,3 @@
 export class User {
-  constructor(public id: number, public name: string, public ubiley: boolean, public day: Date) { }
+  constructor(public id: number, public name: string, public day: Date,public photo:string) { }
 }

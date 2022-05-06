@@ -1,9 +1,8 @@
 
 export interface User {
-    name:string;
-    day: string;
+    user_name:string;
+    user_bday: string;
     days:number;
      year:string;
      years:string;
    }
-   

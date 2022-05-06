@@ -21,7 +21,7 @@ export class RatingComponent {
         
             this.list=data;
             
-            this.list.sort(function (a, b) {
+            /*this.list.sort(function (a, b) {
                 if (a.day > b.day) {
                   return 1;
                 }
@@ -39,12 +39,14 @@ export class RatingComponent {
                 res=Math.ceil(res)
                 this.list[i].days=res
               }
-              
+              */
           }
       );
 
-      console.log(this.httpService.getUserId(2));
-
+      this.httpService.getUserId(3);
+      //this.httpService.addUser("Никита Токийский Петрович", "01.01.2002", "C:/nekit,jpg");
+      this.httpService.updateUser(5,"Никита Хабибуллин Максимович", "01.02.2003", "C:/nekit.jpg");
+      //this.httpService.deleteUser(6);
     }
     openDetailUser(val: number){
       this.selectName.emit(val);

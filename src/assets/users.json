@@ -3,8 +3,8 @@
     {
       "id": 1,
       "name": "dsaf",
-      "ubiley": true,
-      "day": "30.03.2022"
+      "day": "30.03.2022",
+      "photo": "C:/photo.jpg"
     },
     {
       "id": 2,
@@ -15,8 +15,8 @@
     {
       "id": 3,
       "name": "asfgasf",
-      "ubiley": true,
-      "day": "26.03.2022"
+      "day": "26.03.2022",
+      "photo": "C:/photo.jpg"
     }
   ]
 }

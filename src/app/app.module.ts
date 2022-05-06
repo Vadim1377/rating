@@ -16,18 +16,28 @@ import {TableModule} from 'primeng/table';
 import {CalendarModule} from 'primeng/calendar';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgxIndexedDBModule,DBConfig  } from 'ngx-indexed-db';
-const dbConfig: DBConfig  = {
+const dbConfig: DBConfig = {
   name: 'MyDb',
-  version: 1,
+  version: 2,
   objectStoresMeta: [{
-    store: 'people',
+    store: 'users',
     storeConfig: { keyPath: 'id', autoIncrement: true },
     storeSchema: [
-      { name: 'name', keypath: 'name', options: { unique: false } },
-      { name: 'photo', keypath: 'photo', options: { unique: false } },
-      { name: 'email', keypath: 'email', options: { unique: false } }
+      { name: 'user_name', keypath: 'user_name', options: { unique: false } },
+      { name: 'user_bday', keypath: 'user_bday', options: { unique: false } },
+      { name: 'user_photo', keypath: 'user_photo', options: { unique: false } }
     ]
-  }]
+  },
+    //{
+    //  store: 'rating',
+    //  storeConfig: { keyPath: 'id', autoIncrement: true },
+    //  storeSchema: [
+    //    { name: 'user_name', keypath: 'user_name', options: { unique: false } },
+    //    { name: 'user_bday', keypath: 'user_bday', options: { unique: false } },
+    //    { name: 'user_curr_bday', keypath: 'user_curr_bday', options: { unique: false } }
+    //  ]
+    //}
+  ]
 };
 @NgModule({
   declarations: [
