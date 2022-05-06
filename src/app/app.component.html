@@ -6,7 +6,12 @@
         <rating (selectName)="selectName($event)"></rating>
       </div>
       <div *ngIf="tab==2">
-        календарь
+        <div class="months">
+        <div *ngFor="let item of months; let i = index">
+
+        <p-calendar [(ngModel)]="months[i]"  [inline]="true"></p-calendar>
+        </div>
+        </div>
       </div>
       <div *ngIf="tab==3">
         <menu-comp></menu-comp>
