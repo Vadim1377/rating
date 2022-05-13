@@ -1,10 +1,45 @@
 
-    <div class="grid-container">
-        <div class="menu">
-            <p>logo</p>
-            <button class="button">Добавить</button>
-            <button class="button">Изменить</button>
-            <button class="button">Удалить</button>
-        </div>
+    <div class="addUser">
+      <div class="menu">
+        <p>Добавление именинника</p><br />
+        <input [(ngModel)]="FIO" size="32"placeholder="ФИО" /><br />
+        <input [(ngModel)]="DATE" size="32"placeholder="ГГГГ-ММ-ДД"/><br />
+        <input type="file" [(ngModel)]="file" /><a>Добавить фото</a>
+        <button (click)="addUser(FIO,DATE,'')" class="button">Добавить</button>
+      </div>
         <div class="main"></div>
+    </div>
+    <div class="addUser">
+      <div class="menu">
+        <p>Удаление/изменение именинников</p>
+        <input [(ngModel)]="search" placeholder="Поиск" />
+        <p-table [value]="list" class="right">
+          <ng-template pTemplate="header">
+            <tr>
+              <th>№</th>
+              <th>Фото</th>
+              <th>ФИО</th>
+              <th>Дата рождения</th>
+              <th>
+                <div class="chat">+3</div>
+                <div class="chaticon"></div>
+              </th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-car>
+            <tr (click)="openDetailUser(car.id)">
+              <td>{{car.id}}</td>
+              <td><img /></td>
+              <td>{{car.user_name}}</td>
+              <td>{{car.user_bday}}</td>
+              <td>
+                <button  class="button">Изменить</button>
+                <button (click)="deleteUser(car.id)" class="button">Удалить</button>
+              </td>
+
+            </tr>
+          </ng-template>
+        </p-table>
+       
+      </div>
     </div>

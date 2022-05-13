@@ -19,12 +19,12 @@
       <ng-template pTemplate="body" let-car>
           <tr (click)="openDetailUser(car.id)">
               <td>{{car.id}}</td>
-              <td>{{car.name}}</td>
+              <td>{{car.user_name}}</td>
               <td>
-                <div *ngIf="car.ubiley">Юбилей </div>
+                <div *ngIf="car.ubiley" class="ubileyicon"></div>
                
               </td>
-              <td>{{car.day}}</td>
+              <td>{{car.user_bday}}</td>
               <td>{{car.days}}</td>
 
               

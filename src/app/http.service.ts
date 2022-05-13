@@ -14,12 +14,12 @@ export class HttpService{
           .bulkAdd('users', [
             {
               user_name: `Николай Премин Николаевич`,
-              user_bday: `02.01.2000`,
+              user_bday: `2000-01-05`,
               user_photo: `C:/photo.jpg`
             },
             {
               user_name: `Абдул Мохаммед Александрович`,
-              user_bday: `21.11.1990`,
+              user_bday: `1990-11-21`,
               user_photo: `C:/photo.jpg`
             },
           ])
