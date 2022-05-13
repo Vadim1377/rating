@@ -14,11 +14,13 @@ export class AppComponent {
   userid!: any[];
   value: Date = new Date();
   showdetailuser: boolean=false;
-  public months: Date[] = new Array(12).fill(new Date()); //Исправить инициализацию значений
+  months: Date[]=[new Date('01.01.2022'),new Date('02.01.2022'),new Date('03.01.2022'),new Date('04.01.2022'),new Date('05.01.2022'),new Date('06.01.2022'),new Date('07.01.2022'),new Date('08.01.2022'),]
+  //public months: Date[] = new Array(12).fill(new Date()); //Исправить инициализацию значений
   constructor(private httpService: HttpService) { 
-    console.log('da')
-  for (var i=1; i<=12; i++)
-    this.months[i-1].setMonth(i)}
+  //  console.log('da')
+  //for (var i=1; i<=12; i++)
+  //this.months[i-1].setMonth( i)
+}
 
  changeTab(val: any){
    this.tab=val

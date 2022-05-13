@@ -1,3 +1,4 @@
+<div class="container-page">
 <app-navigation (eventMode)="switchModeParent($event)"></app-navigation>
 <app-help></app-help>
 <div class="tab-container">
@@ -9,7 +10,7 @@
         <div class="months">
         <div *ngFor="let item of months; let i = index">
 
-        <p-calendar [(ngModel)]="months[i]"  [inline]="true"></p-calendar>
+        <p-calendar [(ngModel)]="months[i]" dateFormat="dd.mm.yyyy" [inline]="true"></p-calendar>
         </div>
         </div>
       </div>
@@ -22,4 +23,5 @@
 <div class="napominanie"></div>
 <p class="text1">Сегодня</p>
 <p class="text2">Именинников нет</p>
+</div>
 </div>

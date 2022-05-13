@@ -3,25 +3,23 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 1;
+  position: fixed;
  
 }
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #808080;
   width: 70px;
   height: 25px;
+  z-index: 2;
 }
 
  .button:hover {
-   background-color: #808080;
-   color: #9400D3;
  }
 
   .button:active {
-    background-color: #808080;
-    box-shadow: 0 100px #4682B4 inset;
   }
 
 
@@ -30,10 +28,76 @@
   font-family: Arial;
   text-transform: uppercase;
   font-weight: bold;
-  color: #40E0D0;
 }
 
 .ActiveTab {
-  background-color: yellow;
-  color: #800080;
 }
+
+.rectangle1370{
+  position: absolute;
+  width: 94px;
+  height:10%;
+  left: 0;
+  top: 0;
+  background: #5786CB;
+ 
+}
+
+.rectangle1377{
+  position: absolute;
+  width: 94px;
+  height: 100%;
+  left: 0px;
+  top: 10%;
+  background: #2C3348;
+  
+}
+
+.main {
+  background-image: url("main.svg");
+  position: absolute;
+  bottom: 93.26%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.star{
+  display: inline-block;
+  background-image: url("sstar.svg");
+  position: absolute;
+  left: 2.27%;
+  right: 95.39%;
+  top: 15.87%;
+  bottom: 80.87%;
+  width: 35px;
+  height: 45px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.calendar{
+  background-image: url("calendar.svg");
+  position: absolute;
+  left: 2.41%;
+  right: 95.54%;
+  top: 28.15%;
+  bottom: 68.47%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+
+.editing{
+  background-image: url("editing.svg");
+  position: absolute;
+  left: 2.41%;
+  right: 95.54%;
+  top: 40.11%;
+  bottom: 56.73%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
