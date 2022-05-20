@@ -13,12 +13,12 @@ export class HttpService{
           this.dbService
           .bulkAdd('users', [
             {
-              user_name: `Николай Премин Николаевич`,
+              user_name: `Премин Николай Николаевич`,
               user_bday: `2000-01-05`,
               user_photo: `C:/photo.jpg`
             },
             {
-              user_name: `Абдул Мохаммед Александрович`,
+              user_name: `Мохаммед Абдул Александрович`,
               user_bday: `1990-11-21`,
               user_photo: `C:/photo.jpg`
             },
@@ -70,9 +70,42 @@ export class HttpService{
       console.log(users);
     });
   }
-  getImenina() {
+//  getImenina(i: number) {
+//    list!: User[];
+//    this.getData().subscribe((data: any) => {
 
-    return "Иванов В.В.";
+//      this.list = data;
 
-}
+//      for (var i = 0; i < this.list.length; i++) {
+//        var bdayDate = new Date(this.list[i].user_bday);//.transform(new Date(this.list[i].user_bday),'dd/MM/yyyy');
+//        let myDate = new Date();
+//        console.log(myDate);
+//        this.list[i].days = this.inBetween(myDate, bdayDate);
+//        myDate = new Date();
+//        console.log(myDate);
+//        this.list[i].ubiley = this.Ubiley(myDate, bdayDate);
+//      }
+//      this.list.sort(function (a, b) {
+//        if (a.days > b.days) {
+//          return 1;
+//        }
+//        if (a.days < b.days) {
+//          return -1;
+//        }
+//        // a должно быть равным b
+//        return 0;
+//      });
+//      /*let now = new Date().getTime();
+//      var pattern = /(\d{2})\.(\d{2})\.(\d{4})/;
+//      for (var i=0;i<this.list.length;i++){
+//        var dt = new Date(this.list[i].day.replace(pattern,'$3-$2-$1')).getTime();
+//        var res= (dt-now) / 86400000     
+//        res=Math.ceil(res)
+//        this.list[i].days=res
+//      }
+//      */
+//    }
+//    return "Иванов В.В.";
+
+//}
 }

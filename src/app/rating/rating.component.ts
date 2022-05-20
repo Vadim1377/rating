@@ -56,8 +56,10 @@ export class RatingComponent {
 
       this.httpService.getUserId(3);
       //this.httpService.addUser("Никита Токийский Петрович", "2002-01-01", "C:/nekit,jpg");
-      this.httpService.updateUser(10, "Никита Хабибуллин Максимович", "2002-06-13", "C:/nekit.jpg");
-      this.httpService.updateUser(11, "Никита Хабибуллин Максимович", "2007-05-13", "C:/nekit.jpg");
+      //this.httpService.updateUser(10, "Хабибуллин Никита Максимович", "2002-06-13", "C:/nekit.jpg");
+      //this.httpService.updateUser(11, "Хабибуллин Никита Максимович", "2007-05-13", "C:/nekit.jpg");
+      //this.httpService.addUser("Непалов Евгений Юрьевич", "2002-05-20", "C:/phewto.jpg");
+      //this.httpService.addUser("Письменский Юрий Евгеньевич", "2002-05-20", "C:/phewto.jpg");
       //this.httpService.deleteUser(6);
     }
     openDetailUser(val: number){
