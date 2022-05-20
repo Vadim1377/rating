@@ -14,6 +14,9 @@
   color: #3667B1;
     line-height: 30px;
     display: inline-block;
+    top: 1%;
+    left: 5%;
+    position: absolute;
 }
 .staricon{
   background-image: url("star.svg");
@@ -26,22 +29,5 @@
   float: left;
     position: relative;
 }
-.napominanie{
-  background-image: url("napom.svg");
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  float: left;
-    position: relative;
-}
-.tablenapom{
-  width: 406px;
-  height: 124px;
-  top: 629px;
-  left: 132px;
-  position: absolute;
-  border-radius: 40px;
-}
+
+
