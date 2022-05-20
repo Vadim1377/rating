@@ -70,4 +70,9 @@ export class HttpService{
       console.log(users);
     });
   }
+  getImenina() {
+
+    return "Иванов В.В.";
+
+}
 }

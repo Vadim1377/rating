@@ -9,7 +9,7 @@
       <div *ngIf="tab==2">
         <div class="months">
         <div *ngFor="let item of months; let i = index">
-
+          </div>
         <p-calendar [(ngModel)]="months[i]" dateFormat="dd.mm.yyyy" [inline]="true"></p-calendar>
         </div>
         </div>
@@ -22,6 +22,5 @@
 <div class="tablenapom">
 <div class="napominanie"></div>
 <p class="text1">Сегодня</p>
-<p class="text2">Именинников нет</p>
-</div>
+<p class="text2">{{this.currentImenina}}</p>
 </div>

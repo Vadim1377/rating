@@ -11,6 +11,7 @@ import { getLocaleMonthNames } from '@angular/common';
 export class AppComponent {
   title = 'test_progect';
  tab!: number;
+ currentImenina:string="";
   userid!: any[];
   value: Date = new Date();
   showdetailuser: boolean=false;
@@ -30,6 +31,10 @@ export class AppComponent {
   switchModeParent(event: number) {
     console.log(event);
     this.tab = event;
+    if (this.tab==1)
+    {
+      this.currentImenina = this.httpService.getImenina();
+    }
   }
 
  public selectName(val: number): void {
@@ -52,4 +57,5 @@ export class AppComponent {
     
  }
  
+
 }
