@@ -1,27 +1,26 @@
-<div class="container-page">
 <app-navigation (eventMode)="switchModeParent($event)"></app-navigation>
-<app-help></app-help>
-<div class="tab-container">
+<div class="container-page">  
+    <div class="tab-container">
       <div *ngIf="tab==1">
+        <p-calendar [(ngModel)]="value" [inline]="true"></p-calendar>
+        <app-help></app-help>
         <div *ngIf="showdetailuser"><detailuser [userid]="userid"></detailuser></div>
         <rating (selectName)="selectName($event)"></rating>
-      </div>
-      <div *ngIf="tab==2">
-        <div class="months">
-        <div *ngFor="let item of months; let i = index">
-
-        <p-calendar [(ngModel)]="months[i]" dateFormat="dd.mm.yyyy" [inline]="true"></p-calendar>
-        </div>
+        <div class="tablenapom">
+            <div class="napominanie"></div>
+            <p class="text1">Сегодня</p>
+            <p class="text2">Именинников нет</p>
         </div>
       </div>
-      <div *ngIf="tab==3">
-        <menu-comp></menu-comp>
-      </div>
-</div>
-<p-calendar [(ngModel)]="value"  [inline]="true"></p-calendar>
-<div class="tablenapom">
-<div class="napominanie"></div>
-<p class="text1">Сегодня</p>
-<p class="text2">Именинников нет</p>
-</div>
+          <div *ngIf="tab==2" class="tab-2">
+              <div class="months">
+                  <div *ngFor="let item of months; let i = index">
+                      <p-calendar [(ngModel)]="months[i]" dateFormat="dd.mm.yyyy" [inline]="true"></p-calendar>
+                  </div>
+              </div>
+          </div>
+          <div *ngIf="tab==3">
+              <menu-comp></menu-comp>
+          </div>
+    </div>
 </div>
