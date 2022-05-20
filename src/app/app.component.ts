@@ -40,11 +40,11 @@ export class AppComponent {
  finduser(userid: any){
   this.showdetailuser=false;
   this.httpService.getData().subscribe((data:any) => {
-    var userdata=data["userList"]
-    for (var i=0; i<userdata.length; i++)
+    //var userdata = data;
+    for (var i=0; i<data.length; i++)
     {
-        if (userdata[i].number==userid){
-            this.userid=userdata[i]
+        if (data[i].number==userid){
+            this.userid=data[i]
         }
     }
     this.showdetailuser=true;

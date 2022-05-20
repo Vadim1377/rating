@@ -102,7 +102,7 @@ export class RatingComponent {
 
     // Convert back to days and return
     console.log("result of mathround", Math.round(difference_ms / one_year)-1);
-    if ((Math.round(difference_ms / one_year) - 1) % 5 == 0 || Math.round(difference_ms / one_year) % 5 == 0 && (date1.getMonth() <= date2.getMonth() || (date1.getMonth() == date2.getMonth() && date1.getDate() <= date2.getDate())))
+    if ((Math.round(difference_ms / one_year) - 1) % 5 == 0 || Math.round(difference_ms / one_year) % 5 == 0 && (date1.getMonth() < date2.getMonth() || (date1.getMonth() == date2.getMonth() && date1.getDate() <= date2.getDate())))
       return true;
     else
       return false;
