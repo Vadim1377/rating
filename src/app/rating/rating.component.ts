@@ -62,7 +62,7 @@ export class RatingComponent {
     }
     openDetailUser(val: number){
       this.selectName.emit(val);
-      console.log(val)
+      console.log(val);
   }
   inBetween(date1: Date, date2: Date): number {
     //console.log("date", date1, "scnddate", date2);

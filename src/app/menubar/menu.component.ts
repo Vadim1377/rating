@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { HttpService } from '../http.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { User } from '../rating/user';
@@ -10,6 +10,7 @@ import { User } from '../rating/user';
     providers: [HttpService]
 })
 export class MenuComponent {
+  @Output() selectName = new EventEmitter<number>();
   list!: User[];
   currentDate = new Date();
   detailuserid: any;
@@ -55,5 +56,9 @@ export class MenuComponent {
   }
   deleteUser(id:number) {
     this.httpService.deleteUser(id);
+  }
+  openDetailUser(val: number) {
+    this.selectName.emit(val);
+    console.log(val)
   }
 }

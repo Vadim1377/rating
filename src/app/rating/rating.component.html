@@ -17,7 +17,7 @@
           </tr>
       </ng-template>
       <ng-template pTemplate="body" let-car>
-          <tr (click)="openDetailUser(car.user_id)">
+          <tr (click)="openDetailUser(car.id)">
               <td>{{car.id}}</td>
               <td>{{car.user_name}}</td>
               <td>

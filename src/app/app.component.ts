@@ -43,7 +43,7 @@ export class AppComponent {
     //var userdata = data;
     for (var i=0; i<data.length; i++)
     {
-        if (data[i].number==userid){
+        if (data[i].id==userid){
             this.userid=data[i]
         }
     }
