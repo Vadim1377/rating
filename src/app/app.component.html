@@ -20,7 +20,10 @@
               </div>
           </div>
           <div *ngIf="tab==3">
-              <menu-comp></menu-comp>
+            <div *ngIf="showdetailuser">
+              <detailuser [userid]="userid" [admin]="tab"></detailuser>
+            </div>
+            <menu-comp (selectName)="selectName($event)"></menu-comp>
           </div>
     </div>
 </div>

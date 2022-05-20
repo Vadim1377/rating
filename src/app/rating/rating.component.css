@@ -10,7 +10,7 @@
     position: absolute; left:0; top:0; width:30%;
 }
 .right{
-    position: absolute; right:0; top:0; width:70%;
+    position: absolute; right:0px; top:0px; width:70%;
 }
 .chaticon{
     background-image: url("chat.svg");

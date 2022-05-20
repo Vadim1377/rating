@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { HttpService} from './http.service';
 import {CalendarModule} from 'primeng/calendar';
 import { getLocaleMonthNames } from '@angular/common';
@@ -63,6 +63,7 @@ export class AppComponent {
       );
       /*this.currentImenina = this.httpService.getImenina();*/
     }
+    
   }
 
  public selectName(val: number): void {
