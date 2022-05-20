@@ -1,10 +1,12 @@
-<div class="container-page">
 <app-navigation (eventMode)="switchModeParent($event)"></app-navigation>
-<app-help></app-help>
-<div class="tab-container">
+<div class="container-page">  
+    <div class="tab-container">
       <div *ngIf="tab==1">
+        <p-calendar [(ngModel)]="value" [inline]="true"></p-calendar>
+        <app-help></app-help>
         <div *ngIf="showdetailuser"><detailuser [userid]="userid"></detailuser></div>
         <rating (selectName)="selectName($event)"></rating>
+<<<<<<< HEAD
       </div>
       <div *ngIf="tab==2">
         <div class="months">
@@ -12,15 +14,32 @@
           </div>
         <p-calendar [(ngModel)]="months[i]" dateFormat="dd.mm.yyyy" [inline]="true"></p-calendar>
         </div>
+=======
+        <div class="tablenapom">
+            <div class="napominanie"></div>
+            <p class="text1">Сегодня</p>
+            <p class="text2">Именинников нет</p>
+>>>>>>> a96a21168dc4ef9b605f8ee60e6ef941fc9e46ba
         </div>
       </div>
-      <div *ngIf="tab==3">
-        <menu-comp></menu-comp>
-      </div>
+          <div *ngIf="tab==2" class="tab-2">
+              <div class="months">
+                  <div *ngFor="let item of months; let i = index">
+                      <p-calendar [(ngModel)]="months[i]" dateFormat="dd.mm.yyyy" [inline]="true"></p-calendar>
+                  </div>
+              </div>
+          </div>
+          <div *ngIf="tab==3">
+              <menu-comp></menu-comp>
+          </div>
+    </div>
 </div>
+<<<<<<< HEAD
 <p-calendar [(ngModel)]="value"  [inline]="true"></p-calendar>
 <div class="tablenapom">
 <div class="napominanie"></div>
 <p class="text1">Сегодня</p>
 <p class="text2">{{this.currentImenina}}</p>
 </div>
+=======
+>>>>>>> a96a21168dc4ef9b605f8ee60e6ef941fc9e46ba

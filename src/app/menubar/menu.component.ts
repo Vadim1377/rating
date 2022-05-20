@@ -59,6 +59,6 @@ export class MenuComponent {
   }
   openDetailUser(val: number) {
     this.selectName.emit(val);
-    console.log(val)
+    console.log(val);
   }
 }
