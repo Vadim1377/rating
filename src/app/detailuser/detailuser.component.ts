@@ -6,14 +6,14 @@ import { HttpService} from '../http.service';
     styleUrls: ['../app.component.css']
 })
 export class DetailuserComponent { 
-@Input() userid: any=[]; 
-status: boolean = true;
+  @Input() userid: any=[];
+  status: boolean = true;
 constructor(private httpService: HttpService){
     this.status = true;
 }
 closemodal(){
     this.status = false;
-    var modal=document.getElementById('modal')
-    modal!.className='modal closemodal'
+  var modal = document.getElementById('modal');
+  modal!.className = 'modal closemodal';
 }
 }
