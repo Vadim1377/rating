@@ -1,13 +1,34 @@
 <table class="modal" id="modal" style="display:absolute;top:100px;width:500px; border: solid;" (eventMode)="switchModeParent($event)" >
-    <tr>
-        <p style="display: flex;"><th>Имя:{{userid.user_name}}</th><button (click)="closemodal()" class="button" style="float: right; margin-left: 68%;">Закрыть</button></p>
-        <p><th>Дата рождения:{{userid.user_bday}}</th></p>
-        <p><th>Что дарили:</th></p>
-        <p><th>Нрав:</th></p>
-        <p><th>Не нрав:</th></p>
-      <div *ngIf="admin==3"><p><th>
-  <button class="button">Изменить</button>
-  <button (click)="deleteUser(userid.id)" class="button">Удалить</button>
-</th></p></div>
-    </tr>
+  <tr>
+    <div *ngIf="admin!=3">
+      <p style="display: flex;">
+    <th>Имя:{{userid.user_name}}</th>
+    <button (click)="closemodal()" class="button" style="float: right; margin-left: 68%;">Закрыть</button></p>
+    <p>
+    <th>Дата рождения:{{userid.user_bday}}</th></p>
+    <p>
+    <th>Что дарили:</th></p>
+    <p>
+    <th>Нрав:</th></p>
+    <p>
+    <th>Не нрав:</th></p>
+    </div>
+    <div *ngIf="admin==3"><p>
+    <th>
+      <p style="display: flex;">
+    <th>Имя:<input type="text" #fio size="32" value="{{userid.user_name}}" /></th>
+    <button (click)="closemodal()" class="button" style="float: right; margin-left: 68%;">Закрыть</button></p>
+    <p>
+    <th>Дата рождения:<input type="text" #bday size="32" value="{{userid.user_bday}}" /></th></p>
+    <p>
+    <th>Что дарили:</th></p>
+    <p>
+    <th>Нрав:</th></p>
+    <p>
+    <th>Не нрав:</th></p>
+    
+    <button class="button" (click)="updateUser(userid.id,fio.value,bday.value,'')">Изменить</button>
+    <button (click)="deleteUser(userid.id)" class="button">Удалить</button>
+    </th></p></div>
+  </tr>
  </table>

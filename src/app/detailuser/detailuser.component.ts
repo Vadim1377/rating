@@ -17,6 +17,9 @@ closemodal(){
   var modal = document.getElementById('modal');
   modal!.className = 'modal closemodal';
   }
+  updateUser(id: number,name: string, date: string, photo: string) {
+    this.httpService.updateUser(id,name, date, photo);
+  }
   addUser(name: string, date: string, photo: string) {
     this.httpService.addUser(name, date, photo);
   }
