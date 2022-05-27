@@ -3,7 +3,7 @@
     <div class="tab-container">
       <div class="tab-2" *ngIf="tab==1">
         <div class="razdleft">
-          <div class="calend"><p-calendar [(ngModel)]="value" [inline]="true" ></p-calendar></div>
+          <div class="calend calenddop"><p-calendar [(ngModel)]="value" [inline]="true" ></p-calendar></div>
           <div class="tablenapom">
             <div class="napominanie"></div>
             <p class="text1">Сегодня</p>
@@ -18,8 +18,9 @@
         </div>
           <div *ngIf="tab==2" class="tab-2">
               <div class="months">
-                  <div *ngFor="let item of months; let i = index">
-                      <p-calendar [(ngModel)]="months[i]" dateFormat="dd.mm.yyyy" [inline]="true"></p-calendar>
+                  <div *ngFor="let item of months; let i = index" class="small-conteiner-calendar">
+
+                      <p-calendar [(ngModel)]="months[i]" dateFormat="dd.mm.yyyy" [inline]="true" styleClass="small-calendar"></p-calendar>
                   </div>
               </div>
           </div>

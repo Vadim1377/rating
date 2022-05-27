@@ -1,5 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
-html,body{height: 100%;
+html,body{
+    height: 100%;
 width: 100%;
 position: relative;
-display: inline-block;}
+display: inline-block;
+margin: 0; padding: 0;
+}
+.p-datepicker{
+    border-radius: 40px!important;
+    box-shadow: 0px 2px 14px rgb(0 10 102 / 15%);
+}
+.p-datepicker {
+    height: 380px;
+    width: 400px;
+}
+
+.p-calendar{
+    display: inline-block;
+    width: 100%;
+}
+
+.small-calendar1{
+
+    max-width: 200px!important;
+    max-height: 200px!important;
+    /* max-width: 20%!important; */
+    }
+
+.ui-datepicker td span, .ui-datepicker td a {
+    padding: 0px !important;
+}
+
+.ui-calendar .ui-datepicker {
+    height : 150px !important;
+    }
+
+    body .p-datepicker table td {
+        padding: 0.01rem; 
+      }

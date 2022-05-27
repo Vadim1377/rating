@@ -16,7 +16,7 @@ export class AppComponent {
   userid!: any[];
   value: Date = new Date();
   showdetailuser: boolean=false;
-  months: Date[]=[new Date('01.01.2022'),new Date('02.01.2022'),new Date('03.01.2022'),new Date('04.01.2022'),new Date('05.01.2022'),new Date('06.01.2022'),new Date('07.01.2022'),new Date('08.01.2022'),]
+  months: Date[]=[new Date('01.01.2022'),new Date('02.01.2022'),new Date('03.01.2022'),new Date('04.01.2022'),new Date('05.01.2022'),new Date('06.01.2022'),new Date('07.01.2022'),new Date('08.01.2022'),new Date('09.01.2022'),new Date('10.01.2022'), new Date('11.01.2022'),new Date('12.01.2022')]
   //public months: Date[] = new Array(12).fill(new Date()); //Исправить инициализацию значений
   constructor(private httpService: HttpService) { 
   //  console.log('da')
