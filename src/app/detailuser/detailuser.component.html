@@ -1,9 +1,9 @@
-<table class="modal" id="modal" style="display:absolute;top:100px;width:500px; border: solid;" (eventMode)="switchModeParent($event)" >
+<table class="modal" id="modal" style="display:absolute;top:151%;width:500px; border: solid; left: 51%; ;" (eventMode)="switchModeParent($event)" >
   <tr>
     <div *ngIf="admin!=3">
       <p style="display: flex;">
     <th>Имя:{{userid.user_name}}</th>
-    <button (click)="closemodal()" class="button" style="float: right; margin-left: 68%;">Закрыть</button></p>
+    <button (click)="closemodal()" class="button" style="float: right; margin-left: 66%; position: relative;">Закрыть</button></p>
     <p>
     <th>Дата рождения:{{userid.user_bday}}</th></p>
     <p>
