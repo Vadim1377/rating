@@ -4,8 +4,8 @@
         <p>Добавление именинника</p><br />
         <input [(ngModel)]="FIO" size="32"placeholder="ФИО" /><br />
         <input [(ngModel)]="DATE" size="32"placeholder="ГГГГ-ММ-ДД"/><br />
-        <input type="file" [(ngModel)]="file" /><a>Добавить фото</a>
-        <button (click)="addUser(FIO,DATE,'')" class="button">Добавить</button>
+        <input [(ngModel)]="FILE" placeholder="Путь до фото"/><a>Добавить фото</a>
+        <button (click)="addUser(FIO,DATE,FILE)" class="button">Добавить</button>
       </div>
         <div class="main"></div>
     </div>
@@ -29,7 +29,7 @@
           <ng-template pTemplate="body" let-car>
             <tr (click)="openDetailUser(car.id)">
               <td>{{car.id}}</td>
-              <td><img /></td>
+              <td><img src="C:/photo.png"/></td>
               <td>{{car.user_name}}</td>
               <td>{{car.user_bday}}</td>
               <td>
