@@ -1,13 +1,26 @@
+button {
+  border: none;
+  background: #EBEBEB;
+  margin-left:50px;
+  font-size:20px;
+}
+button:hover{
+    color:gray;
+}
 .modal {
     position: absolute;
     top: 20%;
     left: 39%;
     transform: translate(-50%, -50%);
     background-color: white;
-    width: 200px;
-    height: 400px;
+    min-width: 200px;
+    min-height: 200px;
   }
  .knop{
    display:none;
- } 
-
+ }
+.modal-detail {
+  border-radius: 40px;
+  background: #EBEBEB;
+  padding: 20px;
+}

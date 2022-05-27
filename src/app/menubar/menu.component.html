@@ -1,41 +1,26 @@
 
-    <div class="addUser">
+    <div class="addUser" style="position:relative;left:50px">
       <div class="menu">
         <p>Добавление именинника</p><br />
-        <input [(ngModel)]="FIO" size="32"placeholder="ФИО" /><br />
-        <input [(ngModel)]="DATE" size="32"placeholder="ГГГГ-ММ-ДД"/><br />
-        <input [(ngModel)]="FILE" placeholder="Путь до фото"/><a>Добавить фото</a>
+        <input type="text" pInputText [(ngModel)]="FIO" size="32" placeholder="ФИО" /><br />
+        <p-inputMask [(ngModel)]="val" mask="9999-99-99" placeholder="ГГГГ-ММ-ДД"></p-inputMask>
+        <br />
+        <p-fileUpload mode="basic" name="myfile[]" url="./upload.php" multiple="multiple" accept="image/*" [auto]="true"></p-fileUpload><a>Добавить фото</a>
         <button (click)="addUser(FIO,DATE,FILE)" class="button">Добавить</button>
       </div>
         <div class="main"></div>
     </div>
-    <div class="addUser">
+    <div class="addUser" style="position:relative;left:50px">
       <div class="menu">
         <p>Удаление/изменение именинников</p>
-        <input [(ngModel)]="search" placeholder="Поиск" />
+        <input [(ngModel)]="search" type="search" pInputText placeholder="Поиск" />
         <p-table [value]="list" class="right">
-          <ng-template pTemplate="header">
-            <tr>
-              <th>№</th>
-              <th>Фото</th>
-              <th>ФИО</th>
-              <th>Дата рождения</th>
-              <th>
-                <div class="chat">+3</div>
-                <div class="chaticon"></div>
-              </th>
-            </tr>
-          </ng-template>
+          
           <ng-template pTemplate="body" let-car>
             <tr (click)="openDetailUser(car.id)">
-              <td>{{car.id}}</td>
+              
               <td><img src="C:/photo.png"/></td>
-              <td>{{car.user_name}}</td>
-              <td>{{car.user_bday}}</td>
-              <td>
-                <!--<button  class="button">Изменить</button>
-                <button (click)="deleteUser(car.id)" class="button">Удалить</button>-->
-              </td>
+              <td>{{car.user_name}} ({{car.user_bday}})</td>
 
             </tr>
           </ng-template>
@@ -43,3 +28,4 @@
        
       </div>
     </div>
+

@@ -3,7 +3,7 @@ import { HttpService } from '../http.service';
 @Component({
     selector: 'detailuser',
     templateUrl: './detailuser.component.html',
-  styleUrls: ['../app.component.css'],
+  styleUrls: ['../app.component.css','detailuser.component.css'],
 })
 export class DetailuserComponent { 
   @Input() userid: any = [];
