@@ -15,12 +15,11 @@ display: none;
   }
 
 .tab-container{
-  height: calc(100% - 25px);
+  
   width: 100%;
   display: inline-block;
   position: relative;
-  left: 10%;
-  top:3%;
+  padding-left: 50px;
 }
 .napominanie{
   background-image: url("napom.svg");
@@ -36,14 +35,14 @@ display: none;
     margin-left: 48px;
 }
 .tablenapom{
-  top:54%;
-  left:5%;
-  height:100px;
-  width: 400px;
-  position: absolute;
-  border-radius: 40px;
-  background-color: white;
-  border: 2px solid black;
+  top: 5%;
+   
+    height: 100px;
+    width: 400px;
+    position: relative;
+    border-radius: 40px;
+    background-color: white;
+    border: 2px solid black;
 }
 .text1{
   position: absolute;
@@ -84,4 +83,16 @@ display: inline-block;
 width: 100%;
 overflow-y: auto;
 overflow-x: hidden;
+}
+
+.calend{
+  margin-left: -3%;
+  margin-top: 3%;
+}
+.razdleft{
+  position: relative; width: 40%; height:100%; background: #EBEBEB;  float: left; display: inline-block; padding-left: 93px;
+}
+.razdright{
+  position: relative;  width: 60%; height:100%; background: #FBFBFB; display: inline-block; float: left;
+
 }
