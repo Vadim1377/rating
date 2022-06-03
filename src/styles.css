@@ -12,3 +12,8 @@ html, body {
   font-family: Roboto;
   src: url("Roboto-Black.ttf");
 }
+.p-datepicker table td > span.p-highlight {
+  color: #495057;
+  background: #67ff80 !important;
+  font-weight: 600;
+}

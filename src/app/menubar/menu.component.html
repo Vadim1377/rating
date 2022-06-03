@@ -1,31 +1,32 @@
-
-    <div class="addUser" style="position:relative;left:50px">
+<div style="margin-left:100px">
+  <h1>АДМИНКА</h1>
+    <div class="addUser" style="position:relative;left:0;top:50px">
       <div class="menu">
         <p>Добавление именинника</p><br />
         <input type="text" pInputText [(ngModel)]="FIO" size="32" placeholder="ФИО" /><br />
         <p-inputMask [(ngModel)]="val" mask="9999-99-99" placeholder="ГГГГ-ММ-ДД"></p-inputMask>
         <br />
-        <p-fileUpload mode="basic" name="myfile[]" url="./upload.php" multiple="multiple" accept="image/*" [auto]="true"></p-fileUpload><a>Добавить фото</a>
-        <button (click)="addUser(FIO,DATE,FILE)" class="button">Добавить</button>
+        <p-fileUpload mode="basic" name="myfile[]" url="./upload.php" multiple="multiple" accept="image/*" [auto]="true"></p-fileUpload><a>Добавить фото</a><br />
+        <p-button (click)="addUser(FIO,DATE,FILE)" label="Добавить"></p-button>
       </div>
-        <div class="main"></div>
+      <div class="main"></div>
     </div>
-    <div class="addUser" style="position:relative;left:50px">
+    <div class="addUser" style="position:relative;left:50px;top:-110px">
       <div class="menu">
         <p>Удаление/изменение именинников</p>
         <input [(ngModel)]="search" type="search" pInputText placeholder="Поиск" />
         <p-table [value]="list" class="right">
-          
+
           <ng-template pTemplate="body" let-car>
             <tr (click)="openDetailUser(car.id)">
-              
-              <td><img src="C:/photo.png"/></td>
+
+              <td><img src="C:/photo.png" /></td>
               <td>{{car.user_name}} ({{car.user_bday}})</td>
 
             </tr>
           </ng-template>
         </p-table>
-       
+
       </div>
     </div>
-
+  </div>

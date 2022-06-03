@@ -17,9 +17,10 @@ input{
   display: inline-block;
   min-height: 300px;
   min-width:800px;
+
 }
 .menu {
-  grid-area: menu;
+  
   height: 100%;
   width: auto;
   background: #EBEBEB;
@@ -27,9 +28,6 @@ input{
 }
 .addUser .menu {
     padding:10px 20px;
-}
-.main{
-    grid-area:content;
 }
 .button {
     display: inline-flex;
