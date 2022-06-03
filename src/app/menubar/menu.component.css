@@ -7,18 +7,26 @@ body
     width:1920px;
     height:1080px;
 }
+input{
+    height:39px;
+}
+.right {
+  background: #EBEBEB;
+}
 .addUser {
   display: inline-block;
-  height: 200px;
-  grid-template-areas: "menu content";
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 7fr;
+  min-height: 300px;
+  min-width:800px;
 }
-.menu{
-    grid-area:menu;
-    height:100%;
-    width:auto;
-    border: 1px solid black;
+.menu {
+  grid-area: menu;
+  height: 100%;
+  width: auto;
+  background: #EBEBEB;
+  border-radius: 40px;
+}
+.addUser .menu {
+    padding:10px 20px;
 }
 .main{
     grid-area:content;
@@ -44,3 +52,4 @@ body
     background: blue;
     box-shadow: 0 100px #ED1C24 inset;
 }
+

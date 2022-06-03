@@ -1,6 +1,6 @@
 import { Component, Output } from '@angular/core';
 import { HttpService} from './http.service';
-import {CalendarModule} from 'primeng/calendar';
+import { HttpClientModule } from '@angular/common/http';
 import { getLocaleMonthNames } from '@angular/common';
 import { User } from '././rating/user';
 @Component({

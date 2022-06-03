@@ -13,7 +13,10 @@ import { HelpComponent } from './help/help.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 import {TableModule} from 'primeng/table';
-import {CalendarModule} from 'primeng/calendar';
+import { CalendarModule } from 'primeng/calendar';
+import { InputTextModule } from 'primeng/inputtext';
+import { FileUploadModule } from 'primeng/fileupload';
+import { InputMaskModule } from 'primeng/inputmask';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgxIndexedDBModule,DBConfig  } from 'ngx-indexed-db';
 const dbConfig: DBConfig = {
@@ -56,6 +59,9 @@ const dbConfig: DBConfig = {
     FormsModule,
     TableModule,
     CalendarModule,
+    InputTextModule,
+    FileUploadModule,
+    InputMaskModule,
     BrowserAnimationsModule,
     BrowserModule,
     NgxIndexedDBModule.forRoot(dbConfig)

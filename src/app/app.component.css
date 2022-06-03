@@ -11,7 +11,7 @@ display: none;
     top: 20%;
     left: 20%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    
   }
 
 .tab-container{
@@ -101,6 +101,7 @@ align-items: space-around;
   position: relative;  width: 60%; height:100%; background: #FBFBFB; display: inline-block; float: left;
 
 }
+<<<<<<< HEAD
 
 .small-conteiner-calendar1{
   width: 200px;
@@ -114,3 +115,5 @@ align-items: space-around;
 .ui-datepicker td span, .ui-datepicker td a {
   padding: 0px !important;
 }
+=======
+>>>>>>> 561330f3ad748b11807768838df816fce39d0c19
