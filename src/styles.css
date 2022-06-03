@@ -12,7 +12,9 @@ html, body {
 
 @font-face {
     font-family: Roboto;
-    src: url("Roboto-Black.ttf");
+    src: url("assets/Roboto-Black.ttf");
+    src: url("assets/Roboto-Light.ttf");
+    
 }
 .p-datepicker{
     border-radius: 40px!important;
