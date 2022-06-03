@@ -1,19 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
 html, body {
-  margin: 0px;
-  padding: 0px;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  display: inline-block;
-  font-family: 'ROBOTO'!important;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    font-family: 'ROBOTO'!important;
 }
+
 @font-face {
-  font-family: Roboto;
-  src: url("Roboto-Black.ttf");
+    font-family: Roboto;
+    src: url("assets/Roboto-Black.ttf");
+    src: url("assets/Roboto-Light.ttf");
+    
 }
+<<<<<<< HEAD
 .p-datepicker table td > span.p-highlight {
   color: #495057;
   background: #67ff80 !important;
   font-weight: 600;
 }
+=======
+.p-datepicker{
+    border-radius: 40px!important;
+    box-shadow: 0px 2px 14px rgb(0 10 102 / 15%);
+}
+.p-datepicker {
+    height: 380px;
+    width: 400px;
+}
+
+.p-calendar{
+    display: inline-block;
+    width: 100%;
+}
+
+.small-calendar1{
+
+    max-width: 200px!important;
+    max-height: 200px!important;
+    /* max-width: 20%!important; */
+    }
+
+.ui-datepicker td span, .ui-datepicker td a {
+    padding: 0px !important;
+}
+
+.ui-calendar .ui-datepicker {
+    height : 150px !important;
+}
+
+body .p-datepicker table td {
+    padding: 0.01rem; 
+}
+>>>>>>> 5d52f39e43b1d2c2c15fbcf19835c23f13b6ba2d

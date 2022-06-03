@@ -14,16 +14,14 @@ display: none;
     position: absolute;
     top: 20%;
     left: 20%;
-    transform: translate(-50%, -50%);
-    
+    transform: translate(-50%, -50%);    background-color: white;
   }
 
 .tab-container{
   
   width: 100%;
   display: inline-block;
-  position: relative;
-  padding-left: 50px;
+  position: relative;  
 }
 .napominanie{
   background-image: url("napom.svg");
@@ -39,27 +37,30 @@ display: none;
     margin-left: 48px;
 }
 .tablenapom{
-  top: 5%;
+  top: 55%;
    
     height: 100px;
     width: 400px;
-    position: relative;
+    position: absolute;
     border-radius: 40px;
     background-color: white;
-    border: 2px solid black;
+    border: none;
+    box-shadow: 0px 2px 14px rgba(0, 10, 102, 0.15);
+    left: 80px;
 }
 .text1{
   position: absolute;
-  width:90px;
-  height: 23px;
-  margin-left: 108px;
-  margin-top: 19px;
-  size:20px;
-  font-family: 'Roboto';
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: bolder;
-  line-height: 23px;
+    width: 90px;
+    height: 23px;
+    margin-left: 108px;
+    margin-top: 19px;
+    size: 20px;
+    
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    
+    font-weight: 900!important;
+    line-height: 23px;
 }
 .text2{
   position: absolute;
@@ -79,28 +80,51 @@ display: none;
 }.tab-2{
   height:100%;
   width:100%;
+  padding-left: 93px;
+  display:inline-block;
+
 }
 .months {
-height: 80%;
-position: relative;
-display: inline-block;
-width: 100%;
-overflow-y: auto;
-overflow-x: hidden;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-left: 9px;
+justify-content: space-between;
+align-items: space-around;
 }
 
 .calend{
-  margin-left: -3%;
+  margin-left: 10%;
   margin-top: 3%;
+  border-radius: 40px;
+  float: left;
 }
+
 .razdleft{
-  position: relative; width: 40%; height:100%; background: #EBEBEB;  float: left; display: inline-block; padding-left: 93px;
+  position: relative; width: 30%; height:100%; background: #EBEBEB;  float: left; display: inline-block; padding-left: 93px;
 }
 .razdright{
-  position: relative;  width: 60%; height:100%; background: #FBFBFB; display: inline-block; float: left;
+  position: relative;  width: 70%; height:100%; background: #FBFBFB; display: inline-block; float: left;
 
 }
+<<<<<<< HEAD
 @font-face {
   font-family: Roboto;
   src: url("../Roboto-Black.ttf");
 }
+=======
+
+.small-conteiner-calendar1{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  padding: 0px !important;
+}
+
+>>>>>>> 5d52f39e43b1d2c2c15fbcf19835c23f13b6ba2d

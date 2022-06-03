@@ -1,10 +1,23 @@
+button {
+background: #2C3348;
+border: none;
+}
+
+.rectangle1377{
+  position: absolute;
+  background: #2C3348;
+  z-index: 1;
+  width: 94px;
+  height: 100%;
+}
+
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 1;
   position: fixed;
+<<<<<<< HEAD
  
 }
 button {
@@ -32,63 +45,77 @@ button {
 }
 
 .ActiveTab {
+=======
+>>>>>>> 5d52f39e43b1d2c2c15fbcf19835c23f13b6ba2d
 }
 
 .rectangle1370{
   position: absolute;
+<<<<<<< HEAD
   width: 94px;
   height:94px;
   left: 0;
   top: 0;
+=======
+>>>>>>> 5d52f39e43b1d2c2c15fbcf19835c23f13b6ba2d
   background: #5786CB;
- 
-}
-
-.rectangle1377{
-  position: absolute;
   width: 94px;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  background: #2C3348;
-  
+  height:86px;
+  bottom: 91%;
 }
 
 .main {
   background-image: url("main.svg");
   position: absolute;
-  bottom: 93.26%;
   background-position: center;
-  background-size: contain;
   background-repeat: no-repeat;
+  width: 94px;
+  height:86px;
 }
 
 .star{
   display: inline-block;
   background-image: url("sstar_unactive.svg");
   position: absolute;
-  left: 2.27%;
-  right: 95.39%;
-  top: 15.87%;
-  bottom: 80.87%;
-  width: 35px;
-  height: 45px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  left: 30%;
+  top: 20%;
+  width: 32px;
+  height: 30px;
 }
 .calendar {
   background-image: url("calendar_unactive.svg");
   position: absolute;
+<<<<<<< HEAD
   left: 2.41%;
   right: 95.54%;
   top: 28.15%;
   bottom: 68.47%;
   width: 35px;
   height: 45px;
+=======
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  left: 30%;
+  top: 35%;
+  width: 32px;
+  height: 30px;
+  }
+
+.editing{
+  background-image: url("editing.svg");
+  position: absolute;
+>>>>>>> 5d52f39e43b1d2c2c15fbcf19835c23f13b6ba2d
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 30%;
+  top: 50%;
+  width: 32px;
+  height: 30px;
 }
 
 .editing {
