@@ -17,7 +17,6 @@ border: none;
   align-items: center;
   text-align: center;
   position: fixed;
-<<<<<<< HEAD
  
 }
 button {
@@ -45,19 +44,14 @@ button {
 }
 
 .ActiveTab {
-=======
->>>>>>> 5d52f39e43b1d2c2c15fbcf19835c23f13b6ba2d
 }
 
 .rectangle1370{
   position: absolute;
-<<<<<<< HEAD
   width: 94px;
   height:94px;
   left: 0;
   top: 0;
-=======
->>>>>>> 5d52f39e43b1d2c2c15fbcf19835c23f13b6ba2d
   background: #5786CB;
   width: 94px;
   height:86px;
@@ -88,27 +82,12 @@ button {
 .calendar {
   background-image: url("calendar_unactive.svg");
   position: absolute;
-<<<<<<< HEAD
   left: 2.41%;
   right: 95.54%;
   top: 28.15%;
   bottom: 68.47%;
   width: 35px;
   height: 45px;
-=======
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  left: 30%;
-  top: 35%;
-  width: 32px;
-  height: 30px;
-  }
-
-.editing{
-  background-image: url("editing.svg");
-  position: absolute;
->>>>>>> 5d52f39e43b1d2c2c15fbcf19835c23f13b6ba2d
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
